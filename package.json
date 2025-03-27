@@ -1,0 +1,31 @@
+{
+  "name": "hdp-web-server",
+  "version": "1.0.0",
+  "description": "Server para juego HDP versión web (No oficial)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mplp88/hdp-web-server.git"
+  },
+  "keywords": [
+    "hdp",
+    "web",
+    "server",
+    "no",
+    "oficial"
+  ],
+  "author": "Martín Ponce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mplp88/hdp-web-server/issues"
+  },
+  "homepage": "https://github.com/mplp88/hdp-web-server#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pusher": "^5.2.0"
+  }
+}
