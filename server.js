@@ -2,11 +2,13 @@ import express from 'express';
 import Pusher from 'pusher';
 import dotenv from 'dotenv';
 import path from 'path';
+import cors from 'cors'
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(cors());
 
 // Configurar Pusher
 const pusher = new Pusher({
