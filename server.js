@@ -131,7 +131,7 @@ setInterval(() => {
 
     // Si el lobby está vacío o inactivo por más de 15 minutos, eliminarlo
     if (lobby.players.length === 0 && now - lobby.lastUpdated > 15 * 60 * 1000) {
-      lobbies
+      lobbies.pop(lobbies.find((l) => l.lobbyCode == lobbyCode))
     } else {
       pusher.trigger(`lobby-${lobbyCode}`, 'update-players', { players: lobby.players })
     }
